@@ -1,0 +1,15 @@
+double c = std::cos(si);
+double s = std::sin(si);
+double c4 = std::pow(c,4);
+double s4 = std::pow(s,4);
+double c3 = std::pow(c,3);
+double s3 = std::pow(s,3);
+double c2 = std::pow(c,2);
+double s2 = std::pow(s,2);
+
+result[0] = mat[0]*c4 + 2*mat[1]*c2*s2 - 4*mat[2]*c3*s + mat[3]*s4 - 4*mat[4]*c*s3 + 4*mat[5]*c2*s2
+result[1] = c2*(mat[1]*c2 + mat[3]*s2 - 2*mat[4]*c*s) - c*s*(mat[2]*c2 + mat[4]*s2 - 2*mat[5]*c*s) + s2*(mat[0]*c2 + mat[1]*s2 - 2*mat[2]*c*s)
+result[2] = c*s*(mat[0]*c2 + mat[1]*s2 - 2*mat[2]*c*s) - c*s*(mat[1]*c2 + mat[3]*s2 - 2*mat[4]*c*s) + (c2 - s2)*(mat[2]*c2 + mat[4]*s2 - 2*mat[5]*c*s)]
+result[3] = mat[0]*s4 + 2*mat[1]*c2*s2 - 2*mat[2]*c*s3 + mat[3]*c4 - 2*mat[4]*c3*s + mat[5]*c2*s2
+result[4] = mat[0]*c*s3 + mat[1]*c3*s - mat[1]*c*s3 - mat[2]*s4 - mat[3]*c3*s + mat[4]*c4 - mat[5]*c3*s + mat[5]*c*s3]
+result[5] = c*s*(mat[0]*c*s - mat[1]*c*s + mat[2]*(c2 - s2)) - c*s*(mat[1]*c*s - mat[3]*c*s + mat[4]*(c2 - s2)) + (c2 - s2)*(mat[2]*c*s - mat[4]*c*s + mat[5]*(c2 - s2))]] 
